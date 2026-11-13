@@ -1,6 +1,8 @@
 # Dubai Last-Mile Route Optimiser
 
-Vehicle routing for a Dubai delivery station: **60 delivery stops a day, van capacity, 2-hour customer delivery windows and an end-of-shift deadline**. It compares two common "dispatcher" approaches with a mathematical optimiser (Google OR-Tools) over **20 random days**, scoring every plan with the same independent evaluator.
+Vehicle routing for a Dubai delivery station with **synthetic customers (no real customer data)**: **60 delivery stops a day, van capacity, 2-hour customer delivery windows and an end-of-shift deadline**. It compares two common "dispatcher" approaches with a mathematical optimiser (Google OR-Tools) over **20 random synthetic days**, scoring every plan with the same independent evaluator.
+
+**In plain terms:** for the same 60 stops, planning the whole day at once frees about 1.5 vans a day and gets every time-window delivery there on time (68% when drivers simply go to the nearest stop), after 10 seconds of computing. These are simulation results with assumed speeds and distances, not measurements from a real operation.
 
 ![Route maps](outputs/charts/01_route_maps.png)
 
